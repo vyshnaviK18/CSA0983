@@ -1,0 +1,59 @@
+// array operations
+import java.util.*;
+
+class arrop
+{
+	public static void main(String args[])
+	{
+		int i,a,n,j,sum,dif;
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter size=");
+		n=obj.nextInt();
+		int s[] = new int[n];
+		System.out.println("Enter Elements:");
+		for ( i=0;i<n;i++)
+		{
+			s[i]= obj.nextInt();
+		}
+		//sorting
+		for(i=0;i<n;i++)
+		{
+			for(j=i+1;j<n;j++)
+			{
+				if(s[i]>s[j])
+				{
+					a=s[i];
+					s[i]=s[j];
+					s[j]=a;
+				}
+			}
+		}
+		//max
+		System.out.println("Maximum="+s[n-1]);
+		//min
+		System.out.println("Minimum="+s[0]);
+		//second max
+		System.out.println("Second Maximum="+s[n-2]);
+		//sum and difference
+		sum=s[n-1]+s[0];
+		dif=s[n-1]-s[0];
+		//odd num 
+		System.out.println("ODD:");
+		for ( i=0;i<n;i++)
+		{
+			if(s[i]%2!=0)
+			{
+				System.out.print(s[i]+"\t");
+			}
+		}
+		//even num
+		System.out.println("\nEVEN:");
+		for ( i=0;i<n;i++)
+		{
+			if(s[i]%2==0)
+			{
+				System.out.print(s[i]+"\t");
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+// print prime numbers
+import java.util.*;
+
+class primelimit
+{
+	public static void main(String args[])
+	{
+		int i,a,b,c=0;
+		System.out.println("Prime num=");
+		for(i=100;i<=900;i++)
+		{
+			b=i/2;
+			c=0;
+			for(a=2;a<=b;a++)
+			{
+				if(i%a==0)
+				{
+					c++;
+				}
+
+			}
+			if(c==0)
+			{
+				System.out.print(i+",");
+			}
+		}
+ 
+	}
+}

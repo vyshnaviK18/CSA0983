@@ -1,0 +1,42 @@
+//to calculate employee tax amount
+import java.util.*;
+
+class tax
+{
+public static void main(String args[])
+{
+double t,i;
+System.out.println("enter the income=");
+Scanner obj = new Scanner(System.in);
+i=obj.nextFloat();
+if(i<=500000)
+{
+t=0;
+System.out.println("Tax amount="+t);
+}
+else if(i>500000 && i<=750000)
+{
+t=i*0.05;
+System.out.println("Tax amount="+t);
+}
+else if(i>750000 && i<=1000000)
+{
+t=i*0.1;
+System.out.println("Tax amount="+t);
+}
+else if(i>1000000 && i<=1500000)
+{
+t=i*0.12;
+System.out.println("Tax amount="+t);
+}
+else if(i>1500000)
+{
+t=i*0.2;
+System.out.println("Tax amount="+t);
+}
+else
+{
+System.out.println("INVALID INPUT");
+}
+}
+}

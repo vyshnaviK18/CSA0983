@@ -1,0 +1,19 @@
+// sum of series
+import java.util.*;
+
+class sos
+{
+	public static void main(String args[])
+	{
+		int i=0,s=0,n;
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter limit=");
+		n=obj.nextInt();
+		while(i<n)
+		{
+			i++;
+			s+=i;
+		}
+		System.out.println("Sum of Series="+s);
+	}
+}

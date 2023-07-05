@@ -1,0 +1,43 @@
+// arithmetic operations
+
+import java.util.*;
+
+class ari
+{
+	public static void main(String args[])
+	{
+		int a,b,ch;
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Num1=");
+		a=obj.nextInt();
+		System.out.println("Num2=");
+		b=obj.nextInt();
+		System.out.println("Operations \n1- Addtion \n2-Subtraction \n3-Multiplication \n4-Division \n5-Modulus Division");
+		ch=obj.nextInt();
+		System.out.println("Result=");
+		switch(ch)
+		{
+			case 1:
+				System.out.println((a+b));
+				break;
+			case 2:
+				System.out.println((a-b));
+				break;
+			case 3:
+				System.out.println((a*b));
+				break;		
+			case 4:
+				System.out.println((a/b));
+				break;
+			case 5:
+				System.out.println((a%b));
+				break;
+			default :
+				System.out.println("INVALID");
+		}
+	}
+}
+
+
+
+

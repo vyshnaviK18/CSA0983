@@ -1,0 +1,28 @@
+import java.util.*;
+//to calculate simple interest
+
+class simple{
+public static void main(String args[])
+{
+int a, p, t;
+double s=0;
+Scanner obj = new Scanner(System.in);
+System.out.println("Enter the Principal=");
+p=obj.nextInt();
+System.out.println("Enter the time period=");
+t=obj.nextInt();
+System.out.println("Enter your age=");
+a=obj.nextInt();
+if (a>=60)
+{
+s=(p*t*0.1)/100;
+System.out.println("Simple interest="+s);
+}
+else
+{
+s=(p*t*0.12)/100;
+System.out.println("Simple interest="+s);
+}
+}
+}
+

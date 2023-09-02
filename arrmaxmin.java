@@ -34,6 +34,8 @@ class arrmaxmin
 		System.out.println("nth minimum=");
 		nm=obj.nextInt();
 		System.out.println("nth minimum in array "+s[(nm-1)]);
+		System.out.println("Sum="+(s[(n-m)]+s[(nm-1)]));
+		System.out.println("Difference="+(s[(n-m)]-s[(nm-1)]));
 
 	}
 }
